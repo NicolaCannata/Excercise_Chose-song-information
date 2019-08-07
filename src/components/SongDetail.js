@@ -4,7 +4,11 @@ import { connect } from 'react-redux';
 const SongDetail = ({song}) => {
 
     if(!song){
-        return <div>Please Select a song</div>
+        return (
+            <div class="ui one column stackable center aligned page grid">
+                <h2 className="header">Select something please</h2>
+         </div>       
+    )
     }
 
     return(
